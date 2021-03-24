@@ -1,78 +1,63 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        centre
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <div class="bg-black h-screen flex">
+    <div class="w-52 px-10 pt-2 text-white text-center">
+      <p>CENTRE</p>
+    </div>
+    <div class="w-full">
+      <ul class="flex flex-wrap">
+        <li class="pr-4" v-for="content in sortedItemsByName" :key="content.id">
+          <nuxt-link class="
+            w-20
+            font-monos
+            font-bold
+            line-clamp-1
+            block
+            hover:bg-white
+            text-center
+            text-white
+            h-full
+            border-4
+            rounded-lg
+            hover:animate-ping
+            hover:border-white
+            hover:text-black
+          " :to="`/${content.id}`">
+            {{ content.title }}
+          </nuxt-link>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import axios from 'axios'
+export default {
+  async asyncData({ $config, error }) {
+    try {
+      const { data } = await axios.get(
+        'https://centre.microcms.io/api/v1/centre',
+        { headers: { 'X-API-KEY': $config.apiKey } }
+      )
+      return data
+    } catch (err) {
+      error({
+        statusCode: err.response.status,
+        message: err.response.data.message,
+      });
+    }
+  },
+  computed: {
+    // reverseContents() {
+    //     return this.contents.slice().reverse();
+    // },
+    sortedItemsByName(){
+        return this.contents.sort((a, b) => {
+          let textA = a.title.toUpperCase();
+          let textB = b.title.toUpperCase();
+          return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+        });;
+    },
+  }
+}
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>

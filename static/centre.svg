@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="733" height="180" viewBox="0 0 733 180">
+  <g id="グループ_3" data-name="グループ 3" transform="translate(-1307 -199)">
+    <rect id="長方形_1" data-name="長方形 1" width="733" height="180" transform="translate(1307 199)"/>
+    <g id="グループ_2" data-name="グループ 2" transform="translate(189.981 -389)">
+      <g id="グループ_1" data-name="グループ 1" transform="translate(31.207 262)">
+        <g id="楕円形_1" data-name="楕円形 1" transform="translate(1148 338)" fill="none" stroke="#fff" stroke-width="22">
+          <circle cx="78" cy="78" r="78" stroke="none"/>
+          <circle cx="78" cy="78" r="67" fill="none"/>
+        </g>
+        <g id="楕円形_2" data-name="楕円形 2" transform="translate(1189 379)" fill="#deb482" stroke="#fff" stroke-width="9">
+          <circle cx="37" cy="37" r="37" stroke="none"/>
+          <circle cx="37" cy="37" r="32.5" fill="none"/>
+        </g>
+        <path id="合体_1" data-name="合体 1" d="M12.01,12.5C5.378,12.5,0,9.7,0,6.25S5.378,0,12.01,0H75.585a4,4,0,0,1,4,4V8.5a4,4,0,0,1-4,4Z" transform="translate(1224.443 408.718) rotate(-45)" fill="#646464"/>
+        <path id="合体_2" data-name="合体 2" d="M12.01,12.5C5.378,12.5,0,9.7,0,6.25S5.378,0,12.01,0H75.585a4,4,0,0,1,4,4V8.5a4,4,0,0,1-4,4Z" transform="translate(1223 422.25) rotate(-180)" fill="#646464"/>
+        <path id="合体_3" data-name="合体 3" d="M12.01,12.5C5.378,12.5,0,9.7,0,6.25S5.378,0,12.01,0H75.585a4,4,0,0,1,4,4V8.5a4,4,0,0,1-4,4Z" transform="translate(1233.282 415.557) rotate(45)" fill="#646464"/>
+      </g>
+    </g>
+    <text id="CENTRE" transform="translate(1532.396 333.5)" fill="#fff" font-size="122" font-family="Inter-Bold, Inter" font-weight="700" letter-spacing="-0.069em"><tspan x="0" y="0">CENTRE</tspan></text>
+  </g>
+</svg>
