@@ -11,3 +11,4 @@
 - Deployment target: Static (Static/Jamstack hosting)
 - Version control system: Git
 - Headless CMS: microCMS
+- Deploy System: Vercel

@@ -6,22 +6,22 @@
     font-bold
   bg-black">
     <div class="
-      w-52
+      w-72
       p-10
       pt-11
       text-center
       text-white">
       <h1>CENTRE</h1>
     </div>
-    <div class="w-full">
-      <ul class="flex py-10 flex-wrap">
-        <li class="pr-4" v-for="content in sortedItemsByName" :key="content.id">
+    <div class="w-full my-10 mx-5">
+      <ul class="flex flex-wrap">
+        <li class="pr-4 pt-6" v-for="content in sortedItemsByName" :key="content.id">
           <nuxt-link class="
-            w-20
-            h-full
+            w-24
+            h-24
+            p-1
             block
             border-4
-            text-center
             line-clamp-1
             rounded-sm
             hover:animate-ping
@@ -33,7 +33,7 @@
           </nuxt-link>
         </li>
       </ul>
-      <details class="text-white">
+      <details class="text-white pt-10">
         <summary class="
         w-56
         p-4
