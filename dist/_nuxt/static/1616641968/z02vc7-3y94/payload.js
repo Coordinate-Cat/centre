@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/z02vc7-3y94", (function(a){return {data:[{id:"z02vc7-3y94",createdAt:a,updatedAt:a,publishedAt:a,revisedAt:a,title:"zzz",category:null}],fetch:{},mutations:void 0}}("2021-03-24T07:21:15.977Z")));

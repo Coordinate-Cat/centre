@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/46ht9r21nj", (function(a){return {data:[{id:"46ht9r21nj",createdAt:a,updatedAt:a,publishedAt:a,revisedAt:a,title:"test",category:null}],fetch:{},mutations:void 0}}("2021-03-24T07:18:20.619Z")));
