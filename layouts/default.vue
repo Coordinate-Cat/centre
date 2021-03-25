@@ -31,6 +31,18 @@ html {
   margin: 0;
 }
 
+/* my customize */
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 32px;
+}
+/* my customize */
+
 .button--green {
   display: inline-block;
   border-radius: 4px;

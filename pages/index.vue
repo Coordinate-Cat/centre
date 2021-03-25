@@ -1,31 +1,53 @@
 <template>
-  <div class="bg-black h-screen flex">
-    <div class="w-52 px-10 pt-2 text-white text-center">
-      <p>CENTRE</p>
+  <div class="
+    h-screen
+    flex
+    font-monos
+    font-bold
+  bg-black">
+    <div class="
+      w-52
+      p-10
+      pt-11
+      text-center
+      text-white">
+      <h1>CENTRE</h1>
     </div>
     <div class="w-full">
-      <ul class="flex flex-wrap">
+      <ul class="flex py-10 flex-wrap">
         <li class="pr-4" v-for="content in sortedItemsByName" :key="content.id">
           <nuxt-link class="
             w-20
-            font-monos
-            font-bold
-            line-clamp-1
-            block
-            hover:bg-white
-            text-center
-            text-white
             h-full
+            block
             border-4
-            rounded-lg
+            text-center
+            line-clamp-1
+            rounded-sm
             hover:animate-ping
+            hover:bg-white
             hover:border-white
             hover:text-black
-          " :to="`/${content.id}`">
+            text-white" :to="`/${content.id}`">
             {{ content.title }}
           </nuxt-link>
         </li>
       </ul>
+      <details class="text-white">
+        <summary class="
+        w-56
+        p-4
+        border-4
+        rounded-sm">kernelmode</summary>
+        <details>
+        <summary>Site Archive</summary>
+        <a target="_blank" href="/archive/kernelmode-info/index.html">kernelmode.info</a>
+        </details>
+        <details>
+        <summary>Complete KernelMode.info Download</summary>
+        <a target="_blank" href="/archive/kernelmode-info.7z">KernelMode.info Download</a>
+        </details>
+      </details>
     </div>
   </div>
 </template>

@@ -1,9 +1,9 @@
 <template>
-  <main class="main">
-    <h1 class="title text-center text-5xl">{{ title }}</h1>
-    <p class="publishedAt">{{ publishedAt }}</p>
-    <p class="category">{{ category && category.name }}</p>
-    <div class="post m-24" v-html="body"></div>
+  <main class="main h-full bg-black text-white">
+    <h1 class="title text-center">{{ title }}</h1>
+    <p class="publishedAt text-center font-semibold">{{ publishedAt }}</p>
+    <p class="category text-center">Category : {{ category && category.name }}</p>
+    <div class="post mx-36 font-bold" v-html="body"></div>
   </main>
 </template>
 
