@@ -19,7 +19,6 @@ export default {
       return data
     } catch (err) {
       error ({
-        statusCode: err.response.data.status,
         message: err.response.data.message,
       });
     }
