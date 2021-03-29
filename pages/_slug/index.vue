@@ -19,7 +19,7 @@ export default {
       return data
     } catch (err) {
       error ({
-        message: err.response.data.message,
+        message: err.response.message,
       });
     }
   }
