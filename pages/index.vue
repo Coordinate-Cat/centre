@@ -63,8 +63,9 @@ export default {
       )
       return data
     } catch (err) {
-      error({
-        message: err.response.message,
+      error ({
+        statusCode: err.response ? err.response.status : 500,
+        message: err.message,
       });
     }
   },

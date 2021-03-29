@@ -19,7 +19,8 @@ export default {
       return data
     } catch (err) {
       error ({
-        message: err.response.message,
+        statusCode: err.response ? err.response.status : 500,
+        message: err.message,
       });
     }
   }
