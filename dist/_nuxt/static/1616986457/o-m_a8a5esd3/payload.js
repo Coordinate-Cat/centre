@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/o-m_a8a5esd3", (function(a){return {data:[{id:"o-m_a8a5esd3",createdAt:a,updatedAt:a,publishedAt:a,revisedAt:a,title:"testaaa",category:null}],fetch:{},mutations:void 0}}("2021-03-24T07:18:03.826Z")));

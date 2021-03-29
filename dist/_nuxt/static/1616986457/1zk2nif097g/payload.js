@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/1zk2nif097g", (function(a){return {data:[{id:"1zk2nif097g",createdAt:a,updatedAt:a,publishedAt:a,revisedAt:a,title:"テスト",body:"\u003Cp\u003Eテスト\u003C\u002Fp\u003E",category:null}],fetch:{},mutations:void 0}}("2021-03-23T10:11:45.400Z")));

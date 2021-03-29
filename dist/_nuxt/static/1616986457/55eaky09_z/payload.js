@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/55eaky09_z", (function(a){return {data:[{id:"55eaky09_z",createdAt:a,updatedAt:a,publishedAt:a,revisedAt:a,title:"テスト2",body:"\u003Cp\u003Eテスト2\u003C\u002Fp\u003E",category:null}],fetch:{},mutations:void 0}}("2021-03-24T06:51:42.505Z")));
